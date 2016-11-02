@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "finally when the passage is read for the third, ",
+        "finally when the passages read for the third, ",
+        "finally win the passage is read for the third, ",
+        "finally a win the passage is read for the third, ",
+        "finally IT when the passage is read for the third, "
+    ],
+    "err_msg": "success.",
+    "sn": "722677974151478098752",
+    "corpus_no": "6348385800807190347",
+    "err_no": 0
+})

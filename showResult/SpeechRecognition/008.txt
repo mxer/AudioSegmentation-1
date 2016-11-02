@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "don't be upset, ",
+        "i don't be upset, ",
+        "can't be upset, ",
+        "not be upset, ",
+        "now be upset, "
+    ],
+    "err_msg": "success.",
+    "sn": "371267307111478098778",
+    "corpus_no": "6348385912542220234",
+    "err_no": 0
+})

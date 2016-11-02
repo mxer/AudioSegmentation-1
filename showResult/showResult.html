@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speech to Text</title>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<link href="http://cdn.bootcss.com/semantic-ui/2.2.6/semantic.min.css" rel="stylesheet">
+	<script src="http://cdn.bootcss.com/semantic-ui/2.2.6/semantic.min.js"></script>
+</head>
+
+<body>
+
+	<div class="ui input" style="width:100%;">
+		<input type="text" id="number" placeholder="请输入分段数量">
+	</div>
+	
+	<div class="ui input" style="width:100%;">
+		<input type="text" id="talker" placeholder="请输入话者字符串">
+	</div>
+	
+	<button class="ui button" onclick="getnumber()">确认</button>
+	<!--
+	<div class="ui message">
+		<div class="header">Talker 1</div>
+		<p>转换文本</p>
+	</div>
+	-->
+	<div class="ui segment" id="list">
+	</div>
+
+</body>
+
+<script>
+var myArray=new Array();
+var now = 0;
+
+var speechsegmentation = function(data){
+	console.log(data);
+	myArray[now] = data;
+	now++;
+};
+
+var totalnum;
+
+function addZero(str,length){
+	return new Array(length - str.length + 1).join("0") + str;
+}
+
+function getjson(num) {
+	// 提供jsonp服务的url地址（不管是什么类型的地址，最终生成的返回值都是一段javascript代码）
+	var numstr = addZero(num.toString(), 3);
+	var url = "SpeechRecognition/" + numstr + ".txt";
+	// 创建script标签，设置其属性
+	var script = document.createElement('script');
+	script.setAttribute('src', url);
+	// 把script标签加入head，此时调用开始
+	document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function getjsons(nums) {
+	for (i = 0; i < nums; i++) {
+		getjson(i + 1);
+	}
+}
+
+function showtalkers() {
+	document.getElementById("list").innerHTML = "";
+	
+	for (i = 0; i < totalnum; i++) {
+		talkerelement = document.createElement("div");
+		talkerelement.setAttribute("class", "ui message");
+		talkerelement.innerHTML = '<div class="header">Talker '+ talkerarray[i] + '</div><p>' + myArray[i].result[0] + '</p>';
+		document.getElementById("list").appendChild(talkerelement);
+	}
+}
+
+function getnumber() {
+	totalnum = document.getElementById("number").value;
+	talkerarray = document.getElementById("talker").value.split(" ");
+	
+	getjsons(totalnum);
+	
+	setTimeout("showtalkers()", 1000);
+	
+}
+
+</script>
+
+</html>

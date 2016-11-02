@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "my sister just happen to have one and she can't go , and she has got some sort of conflict in her schedule, ",
+        "my sister just happened to have one and she can't go , and she has got some sort of conflict in her schedule, ",
+        "my sister just happen to have one and she can't go , and she has got some sort of conflict in his schedule, ",
+        "my sister just happened to have one and she can't go , and she has got some sort of conflict in his schedule, ",
+        "my sister just happens to have one and she can't go , and she has got some sort of conflict in her schedule, "
+    ],
+    "err_msg": "success.",
+    "sn": "303985256281478098780",
+    "corpus_no": "6348385921157390193",
+    "err_no": 0
+})

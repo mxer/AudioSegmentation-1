@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "in ballet is coming to town next weekend but i can't find a ticket anyway, ",
+        "in ballet is coming to town next weekend that i can't find a ticket anyway, ",
+        "in ballet is coming to town next weekend but i can find a ticket anyway, ",
+        "in ballet is coming to town next weekend when i can't find a ticket anyway, ",
+        "in ballet is coming to town next weekend but i can't find ticket anyway, "
+    ],
+    "err_msg": "success.",
+    "sn": "90422869841478098769",
+    "corpus_no": "6348385873164829805",
+    "err_no": 0
+})

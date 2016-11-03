@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "now listen to the passage, ",
+        "now listen to the passages, ",
+        "now i listen to the passage, ",
+        "now listen to the passage to, ",
+        "now listen to the passage of, "
+    ],
+    "err_msg": "success.",
+    "sn": "900374868031478098766",
+    "corpus_no": "6348385861180791088",
+    "err_no": 0
+})

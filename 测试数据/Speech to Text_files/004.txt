@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "you should check what you have, ",
+        "should check what you have, ",
+        "we should check what you have, ",
+        "i should check what you have, ",
+        "he should check what you have, "
+    ],
+    "err_msg": "success.",
+    "sn": "603356716481478098756",
+    "corpus_no": "6348385818124800319",
+    "err_no": 0
+})

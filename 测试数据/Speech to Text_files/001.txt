@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "the passage is read for the second, ",
+        "the passages read for the second, ",
+        "a passage is read for the second, ",
+        "passage is read for the second, ",
+        "passages read for the second, "
+    ],
+    "err_msg": "success.",
+    "sn": "417398057811478098743",
+    "corpus_no": "6348385762301382143",
+    "err_no": 0
+})

@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "prior to filling the blanks with the exact words you have just, ",
+        "fire to filling the blanks with the exact words you have just, ",
+        "fire to fill in the blanks with the exact words you have just, ",
+        "prior to fill in the blanks with the exact words you have just, ",
+        "fired to fill in the blanks with the exact words you have just, "
+    ],
+    "err_msg": "success.",
+    "sn": "100846735671478098746",
+    "corpus_no": "6348385775146158484",
+    "err_no": 0
+})

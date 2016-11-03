@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "the woman mean, ",
+        "a woman mean, ",
+        "the women mean, ",
+        "a women mean, ",
+        "but women mean, "
+    ],
+    "err_msg": "success.",
+    "sn": "263254005141478098783",
+    "corpus_no": "6348385934018178276",
+    "err_no": 0
+})

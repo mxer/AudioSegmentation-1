@@ -1,0 +1,13 @@
+speechsegmentation({
+    "result": [
+        "both the conversation and the questions will be spoken only once, ",
+        "all the conversation and the questions will be spoken only once, ",
+        "both a conversation and the questions will be spoken only once, ",
+        "both the conversation and the questions wil be spoken only once, ",
+        "with the conversation and the questions will be spoken only once, "
+    ],
+    "err_msg": "success.",
+    "sn": "523263653321478098785",
+    "corpus_no": "6348385942597884868",
+    "err_no": 0
+})
